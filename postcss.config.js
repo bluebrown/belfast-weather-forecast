@@ -1,9 +1,10 @@
 module.exports = {
     plugins: {
-      tailwindcss: {},
-      autoprefixer: {},
-      cssnano: {
-        preset: 'default',
-      }
+        tailwindcss: {},
+        autoprefixer: {},
+        cssnano: {
+            // stripping the comments to make the bucket identify the mime type
+            preset: ["default", { discardComments: { removeAll: true } }],
+        },
     }
-  }
+}

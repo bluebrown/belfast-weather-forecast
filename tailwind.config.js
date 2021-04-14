@@ -4,8 +4,8 @@ module.exports = {
         enabled: isProd,
         preserveHtmlElements: !isProd,
         content: [
-            './public/**/*.html',
-            './public/**/*.js',
+            './public/index.html',
+            './public/index.js',
         ]
     },
     darkMode: false,
