@@ -1,6 +1,6 @@
 import './style.css';
 
-const host = 'https://weather-proxy.rainbowstack.workers.dev/';
+const host = 'https://weather-proxy.rainbowstack.workers.dev';
 
 const template = ({ applicable_date, weather_state_name, weather_state_abbr }) => `
     <li class="text-2xl text-gray-800 flex flex-row md:flex-col items-center justify-center gap-3">
@@ -20,7 +20,7 @@ const forecastEl = document.getElementById('forecast');
 
 (async () => {
     try {
-        const { consolidated_weather } = await (await fetch(`${host}api/location/44544/`)).json()
+        const { consolidated_weather } = await (await fetch(`${host}/api/location/44544/`)).json()
         consolidated_weather.slice(1).forEach((w) => forecastEl.insertAdjacentHTML('beforeend', template(w)))
     } catch (error) {
         console.warn(error)
