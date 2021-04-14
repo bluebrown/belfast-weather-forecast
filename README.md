@@ -11,7 +11,7 @@ git clone https://github.com/bluebrown/belfast-weather-forecast
 cd belfast-weather-forecast && npm i
 ```
 
-Note that code is connecting to a cloudflare worker rather than the actual api. This is due to cors restrictions. If you want to change this behavior, change the variable in the *src/index.js*
+Note that code is connecting to a cloudflare worker rather than the actual API. This is due to CORS restrictions. If you want to change this behavior, change the variable in the *src/index.js*
 
 ```javascript
 const host = 'https://weather-proxy.rainbowstack.workers.dev';
@@ -21,7 +21,7 @@ You can see the worker code here <https://github.com/bluebrown/weather-proxy>.
 
 ## Build
 
-The build command will only compile the tailwind css file. and put it into the *public* folder. The public folder is then ready to be served.
+The build command will only compile the tailwind css file, and put it into the *public* folder. The public folder is then ready to be served.
 
 ```console
 npm run build
@@ -29,7 +29,7 @@ npm run build
 
 ## Deployment
 
-Since this is a static page, the public folder be deployed anywhere. The workflow in this repo is configured to deploy to a s3 bucket in linode, if the correct access keys are provided.
+Since this is a static page, the public folder can be deployed anywhere. The workflow in this repo is configured to deploy to a `S3 bucket` in linode, if the correct access keys are provided.
 
 If you don't want to deploy to s3 you can disable the workflow or adjust it accordingly.
 
