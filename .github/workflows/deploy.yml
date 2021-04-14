@@ -16,7 +16,7 @@ jobs:
     - name: Use S3cmd
       uses: s3-actions/s3cmd@v1.1
       with:
-        cluster: 'eu-central-1'
+        region: 'eu-central-1'
         access_key: ${{ secrets.S3_ACCESS_KEY }}
         secret_key: ${{ secrets.S3_SECRET_KEY }}
     - name: sync website
