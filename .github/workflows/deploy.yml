@@ -21,4 +21,4 @@ jobs:
         access_key: ${{ secrets.S3_ACCESS_KEY }}
         secret_key: ${{ secrets.S3_SECRET_KEY }}
     - name: sync website
-      run: s3cmd sync --recursive --acl-public dist/ s3://${{ secrets.S3_DIST_BUCKET }}
+      run: s3cmd sync --recursive --acl-public public/ s3://${{ secrets.S3_DIST_BUCKET }}

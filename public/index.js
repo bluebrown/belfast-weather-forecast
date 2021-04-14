@@ -1,5 +1,3 @@
-import './style.css';
-
 const host = 'https://weather-proxy.rainbowstack.workers.dev';
 
 const template = ({ applicable_date, weather_state_name, weather_state_abbr }) => `

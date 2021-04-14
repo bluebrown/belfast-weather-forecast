@@ -5,10 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Description: Belfast 5 day weather forecast, Author: Nico Braun, Length: 1 page(s)">
+    <meta name="description"
+        content="Description: Belfast 5 day weather forecast, Author: Nico Braun, Length: 1 page(s)">
     <title>Belfast Weather Forecast</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+    <style>
+        html,
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+    </style>
 
 </head>
 
@@ -19,10 +33,11 @@
         <ul id="forecast" class="w-full flex flex-col md:flex-row gap-1 md:gap-8 md:justify-center"></ul>
     </article>
 
-
     <footer>
         <img src="./background.svg" alt="background">
     </footer>
+
+    <script src="./index.js"></script>
 
 </body>
 

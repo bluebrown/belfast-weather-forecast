@@ -21,23 +21,15 @@ You can see the worker code here <https://github.com/bluebrown/weather-proxy>.
 
 ## Build
 
-The project is bundled with webpack. The build output goes into the dist folder.
+The build command will only compile the tailwind css file. and put it into the *public* folder. The public folder is then ready to be served.
 
 ```console
 npm run build
 ```
 
-## Development
-
-You can start the webpack dev server with
-
-```console
-npm run start
-```
-
 ## Deployment
 
-Since this is a static page, it can be deployed anywhere. The workflow in this repo is configured to deploy to a s3 bucket in linode, if the correct access keys are provided.
+Since this is a static page, the public folder be deployed anywhere. The workflow in this repo is configured to deploy to a s3 bucket in linode, if the correct access keys are provided.
 
 If you don't want to deploy to s3 you can disable the workflow or adjust it accordingly.
 
